@@ -1,0 +1,202 @@
+---
+format: 
+  revealjs:
+    theme: custom-light.scss
+    logo: images/FWS-logo.png
+    footer: "[Alaska Data Week 2024](https://doimspp.sharepoint.com/sites/fws-FF07S00000-data/SitePages/Alaska-Data-Week-2024.aspx)"
+    pointer:
+      color: "#FFFF00"
+editor: source
+highlight-style: tango
+revealjs-plugins:
+  - pointer
+---
+
+```{r setup}
+#| echo: false
+#| include: false
+
+# Knitr settings
+knitr::opts_chunk$set(warning = FALSE, 
+                      message = FALSE, 
+                      fig.retina = 3, 
+                      fig.align = "center")
+
+# Required packages
+p <- c("fontawesome",
+       "kableExtra", 
+       "tidyverse")
+lapply(p, require, character.only = TRUE)
+```
+
+# Publishing Reports, Presentations, and Apps from R
+
+<br>
+
+**McCrea Cobb**
+
+::: smaller
+Refuge Inventory and Monitoring\
+{{< fa envelope title="Email address logo" >}} [mccrea_cobb\@fws.gov](mailto:mccrea_cobb@fws.gov)\
+{{< fa brands github title="The GitHub octocat logo" >}} [mccrea-cobb](https://github.com/mccrea-cobb)
+:::
+
+## Overview
+
+::: incremental
+-   You can publish reports, presentations, and applications from R
+-   Posit Connect is a tool available to FWS
+-   Quick demo of examples
+:::
+
+::: notes
+:::
+
+
+## {.center}
+
+![](./images/posit_connect.png){width="90%"}
+
+::: {.notes}
+- Posit Connect is a publishing platform that supports R and Python frameworks, including Shiny, Quarto, RMarkdown, and Jupyter Notebooks.
+
+- Allows you to:
+  - Publish applications (Shiny) and documents (Quarto/R Markdown)
+  - Automate tasks with code
+  - Host resources like data, models, and R objects
+  - Develop and share web APIs
+:::
+
+
+## Compare Available Applications
+
+<br>
+```{r}
+sad <- fa("far fa-face-frown")
+meh <- fa("far fa-face-meh")
+smile <- fa("far fa-face-smile")
+
+Features <- c("Flexibility", "Analytics", "Visualizations", "Usability", 
+              "Scalability", "Cost")
+
+Shiny <- c(smile, smile, smile, sad,
+           meh, sad)
+Tableau <- c(meh, meh, meh, smile,
+             meh, smile)
+PowerBI <- c(sad, sad, meh, smile,
+             smile, smile)
+
+df <- data.frame(Features, Shiny, Tableau, PowerBI) %>%
+  mutate(Tableau = cell_spec(Tableau, format = "html",
+                        background = factor(Tableau, c(sad, meh, smile), c("#FF0000", "#FFA500", "#006400")), escape = FALSE),
+         Shiny = cell_spec(Shiny, format = "html",
+                        background = factor(Shiny, c(sad, meh, smile), c("#FF0000", "#FFA500", "#006400")), escape = FALSE),
+         PowerBI = cell_spec(PowerBI, format = "html",
+                        background = factor(PowerBI, c(sad, meh, smile), c("#FF0000", "#FFA500", "#006400")), escape = FALSE))
+
+
+kable(df,
+  table.attr = "quarto-disable-processing=true", 
+  format = "html", ## need to include for rendering
+  escape = FALSE) %>%
+  kable_styling(bootstrap_options = c("hover", "condensed", "responsive"),
+                position = "center",
+                full_width = TRUE)
+
+```
+
+
+::: notes
+R Shiny: 
+- High flexibility and customization
+- ideal for advanced analytics
+- requires R programming skills.
+- Integration with R’s rich ecosystem of packages
+- Customizable user interfaces
+- Extensive resources and community support
+
+Tableau
+- point and click = easy (+)
+- point and click = no source code, not reproducible (-)
+- handles large data
+-c
+
+PowerBI
+- User-friendly for non-technical users
+- good scalability and performance
+- integrates well with other Microsoft products
+- limited customization
+- limited advanced analytics 
+:::
+
+
+## Publishing a Shiny App
+
+Sharing a Shiny app
+
+Can revert to previous versions
+
+::: notes
+:::
+
+## Publishing a Report
+
+Send a weekly report with updated data
+Share a location to an authoritative dynamic report
+
+::: notes
+:::
+
+## Publishing a Presentation
+
+::: notes
+:::
+
+
+## Publishing a website
+
+
+
+## Getting Started
+
+<br>
+
+{{< fa comment-dollar title="Comment dollar" >}} **Annual Costs**
+
+::: smaller
+License: \$290\
+Environment: \$144\
+Initial setup: \~\$52\
+**Total per app: \$434 + \$52 initial setup fee**
+:::
+
+<br>
+
+{{< fa address-card title="Address card" >}} **Contact**
+
+::: smaller
+Michaelle Schultz\
+Chief of Data Integration, Ecological Services\
+{{< fa envelope title="Email address logo" >}} [michaelle_schultz\@fws.gov](mailto:michaelle_schultz@fws.gov)
+:::
+
+::: notes
+:::
+
+##  {auto-animate="true"}
+
+::: {style="margin-top: 100px;"}
+Animating content
+:::
+
+##  {auto-animate="true"}
+
+::: {style="margin-top: 200px; font-size: 3em; color: red;"}
+Animating content
+:::
+
+##  {auto-animate="true"}
+
+::: {style="margin-top: 100px;"}
+Animating content
+:::
