@@ -1,7 +1,7 @@
 ---
 format: 
   revealjs:
-    theme: custom-light.scss
+    theme: scss/custom-light.scss
     logo: images/FWS-logo.png
     footer: "[Alaska Data Week 2024](https://doimspp.sharepoint.com/sites/fws-FF07S00000-data/SitePages/Alaska-Data-Week-2024.aspx)"
     pointer:
@@ -33,12 +33,16 @@ lapply(p, require, character.only = TRUE)
 
 <br>
 
-**McCrea Cobb**
+[**McCrea Cobb**]{.author}
 
-::: smaller
+::: {.smaller}
 Refuge Inventory and Monitoring\
 {{< fa envelope title="Email address logo" >}} [mccrea_cobb\@fws.gov](mailto:mccrea_cobb@fws.gov)\
-{{< fa brands github title="The GitHub octocat logo" >}} [mccrea-cobb](https://github.com/mccrea-cobb)
+{{< fa brands github title="The GitHub octocat logo" >}} [mccrea-cobb](https://github.com/mccrea-cobb)  
+:::
+
+::: {.center .smaller style="align-items: bottom;"}
+{{< fa brands github title="The GitHub octocat logo" >}} <https://github.com/USFWS/posit-connect-presentation>
 :::
 
 ## Overview
