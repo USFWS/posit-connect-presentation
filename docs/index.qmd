@@ -2,14 +2,17 @@
 format: 
   revealjs:
     theme: scss/custom-light.scss
+    embed-resources: true
+    code-block-height: 500px
+    code-overflow: wrap
+    width: 1280
+    height: 720
     logo: images/FWS-logo.png
-    footer: "[Alaska Data Week 2024](https://doimspp.sharepoint.com/sites/fws-FF07S00000-data/SitePages/Alaska-Data-Week-2024.aspx)"
+    footer: "[Alaska Data Week 2024](https://doimspp.sharepoint.com/sites/fws-FF07S00000-data/SitePages/Alaska-Data-Week-2024.aspx){.author .small}"
     pointer:
       color: "#FFFF00"
 editor: source
 highlight-style: tango
-revealjs-plugins:
-  - pointer
 ---
 
 ```{r setup}
@@ -29,29 +32,58 @@ p <- c("fontawesome",
 lapply(p, require, character.only = TRUE)
 ```
 
-# Publishing Reports, Presentations, and Apps from R
+# An Introduction to Publishing Data Products Using Posit Connect {.small}
 
-<br>
+<br><br>
 
-[**McCrea Cobb**]{.author}
+[**McCrea Cobb**]{.author .large}
 
-::: {.smaller}
+::: {.small}
 Refuge Inventory and Monitoring\
 {{< fa envelope title="Email address logo" >}} [mccrea_cobb\@fws.gov](mailto:mccrea_cobb@fws.gov)\
 {{< fa brands github title="The GitHub octocat logo" >}} [mccrea-cobb](https://github.com/mccrea-cobb)  
 :::
 
-::: {.center .smaller style="align-items: bottom;"}
+::: {.center .small style="align-items: bottom;"}
 {{< fa brands github title="The GitHub octocat logo" >}} <https://github.com/USFWS/posit-connect-presentation>
 :::
 
+
+# ![](/images/desk_with_ideas.png){width="50%"}
+
+::: {.fragment}
+![](/images/Rlogo.svg){.absolute top=150 left=140 width="25%"}
+![](/images/python-logo-only.svg){.absolute top=150 right=150 width="20%"}
+:::
+
+::: {.fragment}
+![](/images/shiny.png){.absolute top=250 right=0 width="20%"}
+![](/images/logo-quarto.png){.absolute top=250 left=0 width="17%"}
+
+:::
+
+::: notes
+One of the great features of programming languages like R and Python is the ability to generate products from data. These products include basic tables and plots, but more recently, they also include the ability to render dynamic reports that update with new data or interactive applications where a user can select different options to visualize and summarize data. If you using code for your work, you might have heard about or created reports rendered in RMarkdown or Quarto or applications using R Shiny. 
+
+The possibilities for communicating data using code can seem endless if you have the time and know-how. But the delivery of these reports can be a limitation.
+:::
+
+
+# ![](/images/cannot_share.webp){width="50%"}
+
+::: notes
+For example, say you have a report that you wrote in Quarto. How do you share that will the decision-maker? Most likely, the answer might be that you render the report as a PDF or Word document, save it on your computer (or better yet ServCat!), and then email it as an attachment or a hyperlink to the ServCat reference.
+
+What about applications? You've developed a cool Shiny app to display your survey results, but how do you share that with managers that aren't R users? Until fairly recently, FWS biologists did not have any viable options for publishing R Shiny applications.
+:::
+
+
 ## Overview
 
-::: incremental
--   You can publish reports, presentations, and applications from R
--   Posit Connect is a tool available to FWS
--   Quick demo of examples
-:::
+- A brief overview of Posit Connect
+- A review of the type of data products that can be deployed to Posit Connect
+- How to use it
+- Advanced features
 
 ::: notes
 :::
@@ -204,3 +236,4 @@ Animating content
 ::: {style="margin-top: 100px;"}
 Animating content
 :::
+
