@@ -1,0 +1,14 @@
+name: report_example
+title: report_example
+username: mccrea_cobb@fws.gov
+account: mccrea_cobb@fws.gov
+server: das.ecosphere.fws.gov
+hostUrl: https://das.ecosphere.fws.gov/__api__
+appId: 145
+bundleId: 943
+url: https://das.ecosphere.fws.gov/content/83ec840f-ea1e-4b27-b00d-2b267f970889/
+version: 1
+quarto_version: 1.4.553
+quarto_engines: knitr
+asMultiple: FALSE
+asStatic: FALSE

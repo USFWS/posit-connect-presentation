@@ -2,17 +2,16 @@
 format: 
   revealjs:
     theme: scss/custom-light.scss
-    embed-resources: true
+    embed-resources: false
+    auto-play-media: false
     code-block-height: 500px
     code-overflow: wrap
     width: 1280
     height: 720
     logo: images/FWS-logo.png
     footer: "[Alaska Data Week 2024](https://doimspp.sharepoint.com/sites/fws-FF07S00000-data/SitePages/Alaska-Data-Week-2024.aspx){.author .small}"
-    pointer:
-      color: "#FFFF00"
 editor: source
-highlight-style: tango
+highlight-style: github
 ---
 
 ```{r setup}
@@ -38,38 +37,41 @@ lapply(p, require, character.only = TRUE)
 
 [**McCrea Cobb**]{.author .large}
 
-::: {.small}
+::: small
 Refuge Inventory and Monitoring\
 {{< fa envelope title="Email address logo" >}} [mccrea_cobb\@fws.gov](mailto:mccrea_cobb@fws.gov)\
-{{< fa brands github title="The GitHub octocat logo" >}} [mccrea-cobb](https://github.com/mccrea-cobb)  
+{{< fa brands github title="The GitHub octocat logo" >}} [mccrea-cobb](https://github.com/mccrea-cobb)
 :::
 
 ::: {.center .small style="align-items: bottom;"}
 {{< fa brands github title="The GitHub octocat logo" >}} <https://github.com/USFWS/posit-connect-presentation>
 :::
 
+# ![](images/desk_with_ideas.png){width="50%"}
 
-# ![](/images/desk_with_ideas.png){width="50%"}
+::: fragment
+![](images/r_logo.png){.absolute top="150" left="140" width="25%"}
 
-::: {.fragment}
-![](/images/Rlogo.svg){.absolute top=150 left=140 width="25%"}
-![](/images/python-logo-only.svg){.absolute top=150 right=150 width="20%"}
+![](images/python_logo.png){.absolute top="150" right="150" width="20%"}
 :::
 
-::: {.fragment}
-![](/images/shiny.png){.absolute top=250 right=0 width="20%"}
-![](/images/logo-quarto.png){.absolute top=250 left=0 width="17%"}
-
+::: fragment
+![](images/shiny_logo.png){.absolute top="250" right="0" width="20%"} ![](images/quarto_logo.png){.absolute top="250" left="0" width="17%"}
 :::
 
 ::: notes
-One of the great features of programming languages like R and Python is the ability to generate products from data. These products include basic tables and plots, but more recently, they also include the ability to render dynamic reports that update with new data or interactive applications where a user can select different options to visualize and summarize data. If you using code for your work, you might have heard about or created reports rendered in RMarkdown or Quarto or applications using R Shiny. 
+One of the great features of programming languages like R and Python is the ability to generate products from data. These products include basic tables and plots, but more recently, they also include the ability to render dynamic reports that update with new data or interactive applications where a user can select different options to visualize and summarize data. If you using code for your work, you might have heard about or created reports rendered in RMarkdown or Quarto or applications using R Shiny.
 
 The possibilities for communicating data using code can seem endless if you have the time and know-how. But the delivery of these reports can be a limitation.
 :::
 
+## 
 
-# ![](/images/cannot_share.webp){width="50%"}
+![](images/cannot_share.png){.absolute top="50" left="50" width="50%"}
+
+::: fragment
+![](images/cannot_share2.png){.absolute top="50" left="600" width="50%"}
+:::
 
 ::: notes
 For example, say you have a report that you wrote in Quarto. How do you share that will the decision-maker? Most likely, the answer might be that you render the report as a PDF or Word document, save it on your computer (or better yet ServCat!), and then email it as an attachment or a hyperlink to the ServCat reference.
@@ -77,36 +79,23 @@ For example, say you have a report that you wrote in Quarto. How do you share th
 What about applications? You've developed a cool Shiny app to display your survey results, but how do you share that with managers that aren't R users? Until fairly recently, FWS biologists did not have any viable options for publishing R Shiny applications.
 :::
 
-
-## Overview
-
-- A brief overview of Posit Connect
-- A review of the type of data products that can be deployed to Posit Connect
-- How to use it
-- Advanced features
+## ![](./images/posit_connect.png){width="90%"} {transition="zoom-in none-out"}
 
 ::: notes
+-   Posit Connect is a publishing platform that supports R and Python frameworks, including Shiny, Quarto, RMarkdown, and Jupyter Notebooks.
+
+-   Allows you to:
+
+    -   Publish applications (Shiny) and documents (Quarto/R Markdown)
+    -   Automate tasks with code
+    -   Host resources like data, models, and R objects
+    -   Develop and share web APIs
 :::
-
-
-## {.center}
-
-![](./images/posit_connect.png){width="90%"}
-
-::: {.notes}
-- Posit Connect is a publishing platform that supports R and Python frameworks, including Shiny, Quarto, RMarkdown, and Jupyter Notebooks.
-
-- Allows you to:
-  - Publish applications (Shiny) and documents (Quarto/R Markdown)
-  - Automate tasks with code
-  - Host resources like data, models, and R objects
-  - Develop and share web APIs
-:::
-
 
 ## Compare Available Applications
 
 <br>
+
 ```{r}
 sad <- fa("far fa-face-frown")
 meh <- fa("far fa-face-meh")
@@ -141,32 +130,116 @@ kable(df,
 
 ```
 
+::: notes
+R Shiny: - High flexibility and customization - ideal for advanced analytics - requires R programming skills. - Integration with R’s rich ecosystem of packages - Customizable user interfaces - Extensive resources and community support
+
+Tableau - point and click = easy (+) - point and click = no source code, not reproducible (-) - handles large data -c
+
+PowerBI - User-friendly for non-technical users - good scalability and performance - integrates well with other Microsoft products - limited customization - limited advanced analytics
+:::
+
+## Overview
+
+-   A brief overview of Posit Connect
+-   A review of the type of data products that can be deployed to Posit Connect
+-   How to use it
+-   Advanced features
 
 ::: notes
-R Shiny: 
-- High flexibility and customization
-- ideal for advanced analytics
-- requires R programming skills.
-- Integration with R’s rich ecosystem of packages
-- Customizable user interfaces
-- Extensive resources and community support
+:::
 
-Tableau
-- point and click = easy (+)
-- point and click = no source code, not reproducible (-)
-- handles large data
--c
+## What is Quarto?
 
-PowerBI
-- User-friendly for non-technical users
-- good scalability and performance
-- integrates well with other Microsoft products
-- limited customization
-- limited advanced analytics 
+::: columns
+::: {.column width="50%"}
+![](images/quarto_logo.png){width="75%"}
+:::
+
+::: {.column width="50%"}
+-   **Open-source** publishing system
+-   The new-and-improved R Markdown
+    -   Supports R, Python, Julia, Observable
+-   Produce articles, reports, presentations, and websites from code
+-   Output as HTML, PDF, Word
+:::
+:::
+
+::: notes
+-   Quarto is an open source scientific publishing system
+-   Next generation of R Markdown
+-   Supports multiple programming languages
+-   Can create articles, reports, presentations, websites
+-   Can output in HTML, PDF, Word and other formats
+:::
+
+## What is R Shiny?
+
+::: columns
+::: {.column width="50%"}
+![](images/shiny_logo.png){width="85%"}
+:::
+
+::: {.column width="50%"}
+-   Shiny is an R package
+-   Enables building interactive web applications that execute R
+    -   Standalone websites
+    -   Embed interactive charts in Quarto docs
+    -   Build dashboards
+:::
+:::
+
+::: notes
+-   Shiny is an R package
+-   Enables building interactive web applications that execute R
+    -   Standalone websites
+    -   Embed interactive charts in Quarto docs
+    -   Build dashboards
 :::
 
 
-## Publishing a Shiny App
+# Publishing a ![](images/quarto_logo.png){.center-inline height="100px"} Report
+
+
+# 
+
+::: {.columns .smaller}
+::: {.column width="50%"}
+Quarto file
+![](images/report_code.png){height=625}
+:::
+
+::: {.column width="50%"}
+::: {.fragment}
+Rendered Report
+```{=html}
+<iframe width="780" height="650" src="report_example/report_example.html" title="Example Report"></iframe>
+```
+:::
+:::
+
+:::
+
+::: notes
+:::
+
+
+## Publishing Report to Posit Connect
+
+{{< video images/publish_to_posit.mp4 >}}
+
+
+## Scheduling a Report
+
+- Update report with new data
+- Email report on a schedule
+- Small changes from previous process
+
+![](images/publish_to_window2.png)
+
+::: notes
+:::
+
+## Publishing a ![](images/shiny_logo.png){.center-inline height="100px"} Application
 
 Sharing a Shiny app
 
@@ -175,28 +248,18 @@ Can revert to previous versions
 ::: notes
 :::
 
-## Publishing a Report
+## Git-backed Content
 
-Send a weekly report with updated data
-Share a location to an authoritative dynamic report
-
-::: notes
-:::
-
-## Publishing a Presentation
-
-::: notes
-:::
-
-
-## Publishing a website
-
-
+\[if there is time\]
 
 ## Getting Started
 
-<br>
+::: columns
+::: {.column width="50%"}
+![](images/getting_started.png){width="85%"}
+:::
 
+::: {.column width="50%"}
 {{< fa comment-dollar title="Comment dollar" >}} **Annual Costs**
 
 ::: smaller
@@ -206,8 +269,6 @@ Initial setup: \~\$52\
 **Total per app: \$434 + \$52 initial setup fee**
 :::
 
-<br>
-
 {{< fa address-card title="Address card" >}} **Contact**
 
 ::: smaller
@@ -216,24 +277,13 @@ Chief of Data Integration, Ecological Services\
 {{< fa envelope title="Email address logo" >}} [michaelle_schultz\@fws.gov](mailto:michaelle_schultz@fws.gov)
 :::
 
+{{< fa brands github title="The GitHub octocat logo" >}} **Additional Resources**
+
+::: small
+<https://github.com/USFWS/posit-connect-presentation>
+:::
+:::
+:::
+
 ::: notes
 :::
-
-##  {auto-animate="true"}
-
-::: {style="margin-top: 100px;"}
-Animating content
-:::
-
-##  {auto-animate="true"}
-
-::: {style="margin-top: 200px; font-size: 3em; color: red;"}
-Animating content
-:::
-
-##  {auto-animate="true"}
-
-::: {style="margin-top: 100px;"}
-Animating content
-:::
-

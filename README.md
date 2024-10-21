@@ -7,15 +7,18 @@ experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](h
 
 <!-- badges: end -->
 
-# Introduction to Posit Connect for FWS staff
+# An Introduction to Publishing Data Products Using Posit Connect
 
-\[Link to presentation slides\]
+[Link to presentation
+slides](https://usfws.github.io/posit-connect-presentation/#/an-introduction-to-publishing-data-products-using-posit-connect)
 
 ## Description
 
-After attending this presentation, participants will: - Have a basic
-understanding what Posit Connect can do - Have information on how to get
-set up to use Posit Connect
+After attending this lightning talk, participants will:
+
+- Have a basic understanding what Posit Connect can do
+- Have information on how to get set up to use Posit Connect within the
+  USFWS
 
 ## Presenters
 
@@ -24,8 +27,15 @@ set up to use Posit Connect
 
 ## When
 
-\[time and date of presentation\]
+Tuesday, October 29, 2024
 
-# Resources
+## Resources
 
-\[list resources\]
+### Posit Connect
+
+### R Shiny
+
+### Quarto
+
+[Tutorial: Hello,
+Quarto](https://quarto.org/docs/get-started/hello/rstudio.html)

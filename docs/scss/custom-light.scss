@@ -36,7 +36,7 @@ $link-color: $light-blue;
 // code block styling
 $code-block-font-size: 0.5em;
 $code-block-border-left: $light-blue;
-// $code-block-bg: $blue;
+// $code-block-bg: $white;
 // $code-block-color: $white;
 // $code-block-bg-alpha: -.9;
 
@@ -66,6 +66,10 @@ $code-block-border-left: $light-blue;
   margin: 0 auto;
   text-align: center;
 }
+
+/* center an inline image horizontally */
+.center-inline {
+  margin: 0!important;}
 
 /* center text vertically and horizontally */
 .center-xy {
