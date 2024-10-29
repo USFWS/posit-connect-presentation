@@ -14,9 +14,11 @@ knitr::opts_chunk$set(echo = TRUE)
 
 <!-- badges: end -->
 
+
 # An Introduction to Publishing Data Products Using Posit Connect
 
 [Link to presentation slides](https://usfws.github.io/posit-connect-presentation/#/an-introduction-to-publishing-data-products-using-posit-connect)
+
 
 ## Description
 
@@ -27,15 +29,18 @@ After attending this lightning talk, participants will:
 - Have contact information on how to get started using Posit Connect within the U.S. Fish and Wildlife Service.
 - Have additional learning resources on Posit Connect, Quarto, Shiny, and pins.
 
-## Presenters
+
+## Presenter
 
 [McCrea Cobb](mailto:mccrea_cobb@fws.gov)  
 USFWS Refuge Inventory and Monitoring (I&M) Program  
 Alaska Region
 
+
 ## When
 
 Tuesday, October 29, 2024
+
 
 ## Resources
 

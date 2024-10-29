@@ -24,7 +24,7 @@ After attending this lightning talk, participants will:
 - Have additional learning resources on Posit Connect, Quarto, Shiny,
   and pins.
 
-## Presenters
+## Presenter
 
 [McCrea Cobb](mailto:mccrea_cobb@fws.gov)  
 USFWS Refuge Inventory and Monitoring (I&M) Program  
