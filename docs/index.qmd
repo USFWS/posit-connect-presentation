@@ -31,7 +31,7 @@ p <- c("fontawesome",
 lapply(p, require, character.only = TRUE)
 ```
 
-# An Introduction to Publishing Data Products Using Posit Connect {.small}
+# An Introduction to Publishing Data Products Using ![](images/posit_connect_logo.png){.center-inline height="90px"} {.small}
 
 <br><br>
 
@@ -47,7 +47,12 @@ Refuge Inventory and Monitoring\
 {{< fa brands github title="The GitHub octocat logo" >}} <https://github.com/USFWS/posit-connect-presentation>
 :::
 
-# ![](images/desk_with_ideas.png){width="50%"}
+::: notes
+-   Hello everybody. My name is McCrea Cobb. I work as a biometrician in the Alaska Refuge Inventory and Monitoring Program.
+-   I'm here to talk to you about an exciting and (fairly) new tool that is available to everyone called Posit Connect.
+:::
+
+##  {background-image="images/desk_with_ideas.png" background-size="contain"}
 
 ::: fragment
 ![](images/r_logo.png){.absolute top="150" left="140" width="25%"}
@@ -60,39 +65,232 @@ Refuge Inventory and Monitoring\
 :::
 
 ::: notes
-One of the great features of programming languages like R and Python is the ability to generate products from data. These products include basic tables and plots, but more recently, they also include the ability to render dynamic reports that update with new data or interactive applications where a user can select different options to visualize and summarize data. If you using code for your work, you might have heard about or created reports rendered in RMarkdown or Quarto or applications using R Shiny.
-
-The possibilities for communicating data using code can seem endless if you have the time and know-how. But the delivery of these reports can be a limitation.
+-   Those of you that have moved to a script-based data workflow can speak to the advantages of this approach over a traditional manual data workflow.
+-   Advantages include reproducibility, transparent and documented steps, and virtually unlimited tools for analyzing and visualizing data.
+-   \[click\]
+-   One of the great features of programming languages like R and Python is the ability to generate products from data.
+-   These products include basic tables and plots, but more recently, they also include the ability to render dynamic reports that update with new data or interactive applications where a user can select different options to visualize and summarize data.
+-   \[click\]
+-   If you using code for your work, you might have heard about or created reports rendered in RMarkdown or Quarto or created applications using R Shiny.
+-   The possibilities for communicating data using code can seem endless if you have the time and know-how.
 :::
 
-## 
+##  {background-image="images/cannot_share.png" background-size="contain"}
 
-![](images/cannot_share.png){.absolute top="50" left="50" width="50%"}
+#  {background-image="images/cannot_share2.png" background-size="contain"}
 
-::: fragment
-![](images/cannot_share2.png){.absolute top="50" left="600" width="50%"}
 :::
 
 ::: notes
-For example, say you have a report that you wrote in Quarto. How do you share that will the decision-maker? Most likely, the answer might be that you render the report as a PDF or Word document, save it on your computer (or better yet ServCat!), and then email it as an attachment or a hyperlink to the ServCat reference.
-
-What about applications? You've developed a cool Shiny app to display your survey results, but how do you share that with managers that aren't R users? Until fairly recently, FWS biologists did not have any viable options for publishing R Shiny applications.
+-   But **sharing** these reports and applications can be a limitation.
+-   For example, say you have a report that you wrote in Quarto. How do you share that will the decision-maker?
+-   Most likely, the answer might be that you render the report as a PDF or Word document, save it on your computer (or better yet ServCat!), and then email it as an attachment or a hyperlink to the ServCat reference.
+-   What about applications? You've developed a cool Shiny app to display your survey results, but how do you share that with managers that aren't R users? \[click\]
+-   Until fairly recently, FWS biologists did not have any viable options for publishing R Shiny applications.
+-   This was quite frustrating, given the time and energy put into generating these cool data products.
 :::
 
 ## ![](./images/posit_connect.png){width="90%"} {transition="zoom-in none-out"}
 
 ::: notes
+-   Enter Posit Connect!
 -   Posit Connect is a publishing platform that supports R and Python frameworks, including Shiny, Quarto, RMarkdown, and Jupyter Notebooks.
-
--   Allows you to:
-
+-   It allows you to:
     -   Publish applications (Shiny) and documents (Quarto/R Markdown)
-    -   Automate tasks with code
+    -   Automate and schedule tasks with code
     -   Host resources like data, models, and R objects
-    -   Develop and share web APIs
+    -   Even develop and share web APIs
 :::
 
-## Compare Available Applications
+## What is Quarto ![](images/quarto_logo.png){.center-inline height="90px"} ?
+
+![](images/quarto_illustration.png){width="100%"}
+
+::: {smaller}
+Illustration by Allison Horst
+:::
+
+::: notes
+-   Before diving another further, I realize that there are many folks listening that may not be familiar with some of the systems that I've mentioned.
+-   So, here's a quick overview.
+-   Quarto is an open source scientific publishing system
+-   Next generation of R Markdown
+-   Supports multiple programming languages (R, Python, Julia, Observable)
+-   Can create articles, reports, presentations, websites
+- Mix text with in-line code to update statistics in the text 
+-   Can output in HTML, PDF, Word and other formats
+:::
+
+## What is R Shiny ![](images/shiny_logo.png){.center-inline height="80px"} ?
+
+![](images/shiny_app_example.png){width="100%"}
+
+::: notes
+-   Shiny is an R package
+-   Enables building interactive web applications that execute R
+    -   Standalone websites
+    -   Embed interactive charts in Quarto docs
+    -   Build dashboards
+- Primary advantage of a Shiny app is that decision makers can interact with the data.
+- The Shiny app example show here uses data from Alaska refuge survey annual reporting to explore refuge survey progress along a data life cycle from data acquisition to preservation, and some of the reasons for why annual survey tasks could not be completed. 
+- For example, in 2023, a lack of refuge staff was the primary reason that surveys that did not acquire data, followed by partner resources.
+:::
+
+# Publishing a ![](images/quarto_logo.png){.center-inline height="100px"} Report
+
+::: notes
+Ok. I'll now walk through the steps to publishing a Quarto report.
+:::
+
+
+# 
+
+::: {.columns .smaller}
+::: {.column width="50%"}
+Quarto file ![](images/report_code.png){height="625"}
+:::
+
+::: {.column width="50%"}
+::: fragment
+Rendered Report
+
+<iframe width="780" height="620" src="report_example/report_example.html" title="Example Report">
+
+</iframe>
+:::
+:::
+:::
+
+::: notes
+- On the left side, we have a Quarto markdown file to render a simulated moose aerial survey. The code imports observation data, creates figures and tables, calculates statistics that are included in the text.  
+- Typical of these files, there is what's called a YAML header at the top that provides from metadata and the file format to output (in this case, it is HTML).
+- [click] 
+- When rendered in Rstudio, this code produces a HTML report. It includes an embedded and interactive leaflet map widget and interactive tables of the data. In line summary statistics are calculated based on the input data.
+:::
+
+
+## 
+
+::: center
+{{< video images/publish_to_posit.mp4 height="650" >}}
+:::
+
+::: notes
+- Ok, here is the same Quarto file on the left and the rendered report on the right, as viewed in RStudio. I'll walk through the steps to get this local report published as a website in Posit Connect.
+:::
+
+
+## Scheduling a Report
+
+::::: columns
+::: {.column width="50%"}
+![](images/publish_to_window2.png){width="100%"}
+:::
+
+::: {.column width="50%"}
+-   Update report in reponse to new data:
+    1.  Include code to import data in the qmd
+    2.  Create a second qmd to import data, save as a pin
+-   Option to email report on a schedule
+:::
+:::::
+
+::: notes
+- What if you have a report that you regularly update or one that needs to be shared with decision-makers on a schedule?
+- In this sitation, you're looking at scheduling a report, which is quite straightforward in Posit Connect.
+- The first steps are the same as what you just saw.
+- When you get to the window asking whether to publish the doc only or publish it with the source code, you select the later option. 
+- Note that to have the report update with new data, you need to provide the Quarto doc with access to updated data. This can be done either within the same Quarto file, by importing data that are updated (for example from AGOL) or you can create a seperate Quarto file that would be scheduled to import data and save it in Posit Connect as what's called a Pin. You would then point to this Pin in your original Quarto report.
+- Either way, you have options for how often to update the data or report. You can also tell it to schedule an email with the updated report, so that decision makers know that new information is available. 
+:::
+
+## Publishing a ![](images/shiny_logo.png){.center-inline height="100px"} Application
+
+<br><br><br>
+
+:::: center
+::: large
+Almost the same process\
+as publishing a report!
+:::
+::::
+
+::: notes
+The steps are basically the same as publishing a Quarto report. 
+:::
+
+## Publishing Git-backed {{< fa brands github title="The GitHub octocat logo" >}} Content
+
+:::::: columns
+::: {.column width="40%"}
+![](images/octocat.png){width="90%"}
+:::
+
+:::: {.column width="60%"}
+::: small
+1.  Create a Version Control RStudio Project connected to a GitHub {{< fa brands github title="The GitHub octocat logo" >}} repository.
+2.  Create a `manifest.json` file by running `rsconnect::writeManifest()`.
+3.  Visit [Posit Connect](https://das.ecosphere.fws.gov/connect/). Select ![](images/publish_button_posit_connect.png){.center-inline height="30px"}.
+4.  Select ![](images/import_from_git.png){.center-inline height="60px"}.
+5.  Provide URL to **public** GitHub repository. Select a branch.
+6.  🤩
+:::
+::::
+::::::
+
+::: notes
+-   For those of you that are using Git and GitHub to version control and collaborate on developing data prodcuts, know that it's possible to publish content on Posit Connect that updates with changes on a GitHub repository.
+-   Why would you want this workflow?
+    -   Automatically updates application when changes are pushed to GitHub
+    -   Can dedicate GitHub branches for your app in either a `development` and `production` environment
+- First, you need to create project that is under version control and connected to a GitHub repository.
+- Then you need to create what's called a manifest json file that describes the R package dependencies and environment. To do this, simply run the function shown.
+- Next, you need to open your Posit Connect content dashboard and select "Publish".
+- Select the Import from Git option.
+- Provide a URL to a **public** GitHub repository and specify a branch. 
+- That's it.
+- Whenever you make changes to that branch, Posit Connect detects that change and republishes your data product.
+:::
+
+
+## Getting Started
+
+:::::::: columns
+::: {.column width="50%"}
+![](images/getting_started.png){width="85%"}
+:::
+
+:::::: {.column width="50%"}
+<br>
+{{< fa comment-dollar title="Comment dollar" >}} **Annual Costs**
+
+::: {.smaller}
+License: \$290\
+Environment: \$144\
+**Total per app: \$434 + \$52 initial setup fee**
+:::
+
+{{< fa address-card title="Address card" >}} **Contact**
+
+::: {.smaller}
+Michaelle Schultz  
+Chief of Data Integration  
+FWS Ecological Services  
+{{< fa envelope title="Email address logo" >}} [michaelle_schultz\@fws.gov](mailto:michaelle_schultz@fws.gov)
+:::
+
+{{< fa brands github title="The GitHub octocat logo" >}} **Additional Resources**
+
+::: {.smaller}
+<https://github.com/USFWS/posit-connect-presentation>
+:::
+::::::
+::::::::
+
+::: notes
+:::
+
+## Compare Available Applications {visibility="hidden"}
 
 <br>
 
@@ -136,154 +334,4 @@ R Shiny: - High flexibility and customization - ideal for advanced analytics - r
 Tableau - point and click = easy (+) - point and click = no source code, not reproducible (-) - handles large data -c
 
 PowerBI - User-friendly for non-technical users - good scalability and performance - integrates well with other Microsoft products - limited customization - limited advanced analytics
-:::
-
-## Overview
-
--   A brief overview of Posit Connect
--   A review of the type of data products that can be deployed to Posit Connect
--   How to use it
--   Advanced features
-
-::: notes
-:::
-
-## What is Quarto?
-
-::: columns
-::: {.column width="50%"}
-![](images/quarto_logo.png){width="75%"}
-:::
-
-::: {.column width="50%"}
--   **Open-source** publishing system
--   The new-and-improved R Markdown
-    -   Supports R, Python, Julia, Observable
--   Produce articles, reports, presentations, and websites from code
--   Output as HTML, PDF, Word
-:::
-:::
-
-::: notes
--   Quarto is an open source scientific publishing system
--   Next generation of R Markdown
--   Supports multiple programming languages
--   Can create articles, reports, presentations, websites
--   Can output in HTML, PDF, Word and other formats
-:::
-
-## What is R Shiny?
-
-::: columns
-::: {.column width="50%"}
-![](images/shiny_logo.png){width="85%"}
-:::
-
-::: {.column width="50%"}
--   Shiny is an R package
--   Enables building interactive web applications that execute R
-    -   Standalone websites
-    -   Embed interactive charts in Quarto docs
-    -   Build dashboards
-:::
-:::
-
-::: notes
--   Shiny is an R package
--   Enables building interactive web applications that execute R
-    -   Standalone websites
-    -   Embed interactive charts in Quarto docs
-    -   Build dashboards
-:::
-
-
-# Publishing a ![](images/quarto_logo.png){.center-inline height="100px"} Report
-
-
-# 
-
-::: {.columns .smaller}
-::: {.column width="50%"}
-Quarto file
-![](images/report_code.png){height=625}
-:::
-
-::: {.column width="50%"}
-::: {.fragment}
-Rendered Report
-```{=html}
-<iframe width="780" height="650" src="report_example/report_example.html" title="Example Report"></iframe>
-```
-:::
-:::
-
-:::
-
-::: notes
-:::
-
-
-## Publishing Report to Posit Connect
-
-{{< video images/publish_to_posit.mp4 >}}
-
-
-## Scheduling a Report
-
-- Update report with new data
-- Email report on a schedule
-- Small changes from previous process
-
-![](images/publish_to_window2.png)
-
-::: notes
-:::
-
-## Publishing a ![](images/shiny_logo.png){.center-inline height="100px"} Application
-
-Sharing a Shiny app
-
-Can revert to previous versions
-
-::: notes
-:::
-
-## Git-backed Content
-
-\[if there is time\]
-
-## Getting Started
-
-::: columns
-::: {.column width="50%"}
-![](images/getting_started.png){width="85%"}
-:::
-
-::: {.column width="50%"}
-{{< fa comment-dollar title="Comment dollar" >}} **Annual Costs**
-
-::: smaller
-License: \$290\
-Environment: \$144\
-Initial setup: \~\$52\
-**Total per app: \$434 + \$52 initial setup fee**
-:::
-
-{{< fa address-card title="Address card" >}} **Contact**
-
-::: smaller
-Michaelle Schultz\
-Chief of Data Integration, Ecological Services\
-{{< fa envelope title="Email address logo" >}} [michaelle_schultz\@fws.gov](mailto:michaelle_schultz@fws.gov)
-:::
-
-{{< fa brands github title="The GitHub octocat logo" >}} **Additional Resources**
-
-::: small
-<https://github.com/USFWS/posit-connect-presentation>
-:::
-:::
-:::
-
-::: notes
 :::

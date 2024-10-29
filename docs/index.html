@@ -12,7 +12,7 @@
 <link href="index_files/libs/quarto-contrib/videojs/video-js.css" rel="stylesheet">
 <link href="index_files/libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
 <link href="index_files/libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.4.553">
+  <meta name="generator" content="quarto-1.5.57">
 
   <title>index</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -333,8 +333,9 @@
     <div class="slides">
 
 
-<section id="an-introduction-to-publishing-data-products-using-posit-connect" class="title-slide slide level1 small center">
-<h1>An Introduction to Publishing Data Products Using Posit Connect</h1>
+<section>
+<section id="an-introduction-to-publishing-data-products-using" class="title-slide slide level1 small center">
+<h1>An Introduction to Publishing Data Products Using <img data-src="images/posit_connect_logo.png" class="center-inline" height="90"></h1>
 <p><br><br></p>
 <p><span class="author large"><strong>McCrea Cobb</strong></span></p>
 <div class="small">
@@ -345,356 +346,11 @@
 <div class="center small" style="align-items: bottom;">
 <p><i class="fa-brands fa-github" title="The GitHub octocat logo" aria-label="github"></i> <a href="https://github.com/USFWS/posit-connect-presentation" class="uri">https://github.com/USFWS/posit-connect-presentation</a></p>
 </div>
-</section>
-
-<section>
-<section id="section" class="title-slide slide level1 center">
-<h1><img data-src="images/desk_with_ideas.png" style="width:50.0%"></h1>
-<div class="fragment">
-<p><img data-src="images/r_logo.png" class="absolute" style="top: 150px; left: 140px; width: 25%; "></p>
-<p><img data-src="images/python_logo.png" class="absolute" style="top: 150px; right: 150px; width: 20%; "></p>
-</div>
-<div class="fragment">
-<p><img data-src="images/shiny_logo.png" class="absolute" style="top: 250px; right: 0px; width: 20%; "> <img data-src="images/quarto_logo.png" class="absolute" style="top: 250px; left: 0px; width: 17%; "></p>
-</div>
-<aside class="notes">
-<p>One of the great features of programming languages like R and Python is the ability to generate products from data. These products include basic tables and plots, but more recently, they also include the ability to render dynamic reports that update with new data or interactive applications where a user can select different options to visualize and summarize data. If you using code for your work, you might have heard about or created reports rendered in RMarkdown or Quarto or applications using R Shiny.</p>
-<p>The possibilities for communicating data using code can seem endless if you have the time and know-how. But the delivery of these reports can be a limitation.</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-</section>
-<section id="section-1" class="slide level2">
-<h2></h2>
-<p><img data-src="images/cannot_share.png" class="absolute" style="top: 50px; left: 50px; width: 50%; "></p>
-<div class="fragment">
-<p><img data-src="images/cannot_share2.png" class="absolute" style="top: 50px; left: 600px; width: 50%; "></p>
-</div>
-<aside class="notes">
-<p>For example, say you have a report that you wrote in Quarto. How do you share that will the decision-maker? Most likely, the answer might be that you render the report as a PDF or Word document, save it on your computer (or better yet ServCat!), and then email it as an attachment or a hyperlink to the ServCat reference.</p>
-<p>What about applications? You’ve developed a cool Shiny app to display your survey results, but how do you share that with managers that aren’t R users? Until fairly recently, FWS biologists did not have any viable options for publishing R Shiny applications.</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-</section>
-<section id="section-2" class="slide level2" data-transition="zoom-in none-out">
-<h2><img data-src="./images/posit_connect.png" style="width:90.0%"></h2>
 <aside class="notes">
 <ul>
-<li><p>Posit Connect is a publishing platform that supports R and Python frameworks, including Shiny, Quarto, RMarkdown, and Jupyter Notebooks.</p></li>
-<li><p>Allows you to:</p>
-<ul>
-<li>Publish applications (Shiny) and documents (Quarto/R Markdown)</li>
-<li>Automate tasks with code</li>
-<li>Host resources like data, models, and R objects</li>
-<li>Develop and share web APIs</li>
-</ul></li>
+<li>Hello everybody. My name is McCrea Cobb. I work as a biometrician in the Alaska Refuge Inventory and Monitoring Program.</li>
+<li>I’m here to talk to you about an exciting and (fairly) new tool that is available to everyone called Posit Connect.</li>
 </ul>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-</section>
-<section id="compare-available-applications" class="slide level2">
-<h2>Compare Available Applications</h2>
-<p><br></p>
-<div class="cell" data-layout-align="center">
-<div class="cell-output-display">
-<table quarto-disable-processing="true" class="table table-hover table-condensed table-responsive" style="margin-left: auto; margin-right: auto;">
- <thead>
-  <tr>
-   <th style="text-align:left;"> Features </th>
-   <th style="text-align:left;"> Shiny </th>
-   <th style="text-align:left;"> Tableau </th>
-   <th style="text-align:left;"> PowerBI </th>
-  </tr>
- </thead>
-<tbody>
-  <tr>
-   <td style="text-align:left;"> Flexibility </td>
-   <td style="text-align:left;"> <span style="     border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: rgba(0, 100, 0, 255) !important;"><svg aria-hidden="true" role="img" viewbox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M464 256A208 208 0 1 0 48 256a208 208 0 1 0 416 0zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zm177.6 62.1C192.8 334.5 218.8 352 256 352s63.2-17.5 78.4-33.9c9-9.7 24.2-10.4 33.9-1.4s10.4 24.2 1.4 33.9c-22 23.8-60 49.4-113.6 49.4s-91.7-25.5-113.6-49.4c-9-9.7-8.4-24.9 1.4-33.9s24.9-8.4 33.9 1.4zM144.4 208a32 32 0 1 1 64 0 32 32 0 1 1 -64 0zm192-32a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"></path></svg></span> </td>
-   <td style="text-align:left;"> <span style="     border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: rgba(255, 165, 0, 255) !important;"><svg aria-hidden="true" role="img" viewbox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M464 256A208 208 0 1 1 48 256a208 208 0 1 1 416 0zM256 0a256 256 0 1 0 0 512A256 256 0 1 0 256 0zM176.4 240a32 32 0 1 0 0-64 32 32 0 1 0 0 64zm192-32a32 32 0 1 0 -64 0 32 32 0 1 0 64 0zM184 328c-13.3 0-24 10.7-24 24s10.7 24 24 24H328c13.3 0 24-10.7 24-24s-10.7-24-24-24H184z"></path></svg></span> </td>
-   <td style="text-align:left;"> <span style="     border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: rgba(255, 0, 0, 255) !important;"><svg aria-hidden="true" role="img" viewbox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M464 256A208 208 0 1 0 48 256a208 208 0 1 0 416 0zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zM174.6 384.1c-4.5 12.5-18.2 18.9-30.7 14.4s-18.9-18.2-14.4-30.7C146.9 319.4 198.9 288 256 288s109.1 31.4 126.6 79.9c4.5 12.5-2 26.2-14.4 30.7s-26.2-2-30.7-14.4C328.2 358.5 297.2 336 256 336s-72.2 22.5-81.4 48.1zM144.4 208a32 32 0 1 1 64 0 32 32 0 1 1 -64 0zm192-32a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"></path></svg></span> </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> Analytics </td>
-   <td style="text-align:left;"> <span style="     border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: rgba(0, 100, 0, 255) !important;"><svg aria-hidden="true" role="img" viewbox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M464 256A208 208 0 1 0 48 256a208 208 0 1 0 416 0zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zm177.6 62.1C192.8 334.5 218.8 352 256 352s63.2-17.5 78.4-33.9c9-9.7 24.2-10.4 33.9-1.4s10.4 24.2 1.4 33.9c-22 23.8-60 49.4-113.6 49.4s-91.7-25.5-113.6-49.4c-9-9.7-8.4-24.9 1.4-33.9s24.9-8.4 33.9 1.4zM144.4 208a32 32 0 1 1 64 0 32 32 0 1 1 -64 0zm192-32a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"></path></svg></span> </td>
-   <td style="text-align:left;"> <span style="     border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: rgba(255, 165, 0, 255) !important;"><svg aria-hidden="true" role="img" viewbox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M464 256A208 208 0 1 1 48 256a208 208 0 1 1 416 0zM256 0a256 256 0 1 0 0 512A256 256 0 1 0 256 0zM176.4 240a32 32 0 1 0 0-64 32 32 0 1 0 0 64zm192-32a32 32 0 1 0 -64 0 32 32 0 1 0 64 0zM184 328c-13.3 0-24 10.7-24 24s10.7 24 24 24H328c13.3 0 24-10.7 24-24s-10.7-24-24-24H184z"></path></svg></span> </td>
-   <td style="text-align:left;"> <span style="     border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: rgba(255, 0, 0, 255) !important;"><svg aria-hidden="true" role="img" viewbox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M464 256A208 208 0 1 0 48 256a208 208 0 1 0 416 0zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zM174.6 384.1c-4.5 12.5-18.2 18.9-30.7 14.4s-18.9-18.2-14.4-30.7C146.9 319.4 198.9 288 256 288s109.1 31.4 126.6 79.9c4.5 12.5-2 26.2-14.4 30.7s-26.2-2-30.7-14.4C328.2 358.5 297.2 336 256 336s-72.2 22.5-81.4 48.1zM144.4 208a32 32 0 1 1 64 0 32 32 0 1 1 -64 0zm192-32a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"></path></svg></span> </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> Visualizations </td>
-   <td style="text-align:left;"> <span style="     border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: rgba(0, 100, 0, 255) !important;"><svg aria-hidden="true" role="img" viewbox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M464 256A208 208 0 1 0 48 256a208 208 0 1 0 416 0zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zm177.6 62.1C192.8 334.5 218.8 352 256 352s63.2-17.5 78.4-33.9c9-9.7 24.2-10.4 33.9-1.4s10.4 24.2 1.4 33.9c-22 23.8-60 49.4-113.6 49.4s-91.7-25.5-113.6-49.4c-9-9.7-8.4-24.9 1.4-33.9s24.9-8.4 33.9 1.4zM144.4 208a32 32 0 1 1 64 0 32 32 0 1 1 -64 0zm192-32a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"></path></svg></span> </td>
-   <td style="text-align:left;"> <span style="     border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: rgba(255, 165, 0, 255) !important;"><svg aria-hidden="true" role="img" viewbox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M464 256A208 208 0 1 1 48 256a208 208 0 1 1 416 0zM256 0a256 256 0 1 0 0 512A256 256 0 1 0 256 0zM176.4 240a32 32 0 1 0 0-64 32 32 0 1 0 0 64zm192-32a32 32 0 1 0 -64 0 32 32 0 1 0 64 0zM184 328c-13.3 0-24 10.7-24 24s10.7 24 24 24H328c13.3 0 24-10.7 24-24s-10.7-24-24-24H184z"></path></svg></span> </td>
-   <td style="text-align:left;"> <span style="     border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: rgba(255, 165, 0, 255) !important;"><svg aria-hidden="true" role="img" viewbox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M464 256A208 208 0 1 1 48 256a208 208 0 1 1 416 0zM256 0a256 256 0 1 0 0 512A256 256 0 1 0 256 0zM176.4 240a32 32 0 1 0 0-64 32 32 0 1 0 0 64zm192-32a32 32 0 1 0 -64 0 32 32 0 1 0 64 0zM184 328c-13.3 0-24 10.7-24 24s10.7 24 24 24H328c13.3 0 24-10.7 24-24s-10.7-24-24-24H184z"></path></svg></span> </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> Usability </td>
-   <td style="text-align:left;"> <span style="     border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: rgba(255, 0, 0, 255) !important;"><svg aria-hidden="true" role="img" viewbox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M464 256A208 208 0 1 0 48 256a208 208 0 1 0 416 0zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zM174.6 384.1c-4.5 12.5-18.2 18.9-30.7 14.4s-18.9-18.2-14.4-30.7C146.9 319.4 198.9 288 256 288s109.1 31.4 126.6 79.9c4.5 12.5-2 26.2-14.4 30.7s-26.2-2-30.7-14.4C328.2 358.5 297.2 336 256 336s-72.2 22.5-81.4 48.1zM144.4 208a32 32 0 1 1 64 0 32 32 0 1 1 -64 0zm192-32a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"></path></svg></span> </td>
-   <td style="text-align:left;"> <span style="     border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: rgba(0, 100, 0, 255) !important;"><svg aria-hidden="true" role="img" viewbox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M464 256A208 208 0 1 0 48 256a208 208 0 1 0 416 0zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zm177.6 62.1C192.8 334.5 218.8 352 256 352s63.2-17.5 78.4-33.9c9-9.7 24.2-10.4 33.9-1.4s10.4 24.2 1.4 33.9c-22 23.8-60 49.4-113.6 49.4s-91.7-25.5-113.6-49.4c-9-9.7-8.4-24.9 1.4-33.9s24.9-8.4 33.9 1.4zM144.4 208a32 32 0 1 1 64 0 32 32 0 1 1 -64 0zm192-32a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"></path></svg></span> </td>
-   <td style="text-align:left;"> <span style="     border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: rgba(0, 100, 0, 255) !important;"><svg aria-hidden="true" role="img" viewbox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M464 256A208 208 0 1 0 48 256a208 208 0 1 0 416 0zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zm177.6 62.1C192.8 334.5 218.8 352 256 352s63.2-17.5 78.4-33.9c9-9.7 24.2-10.4 33.9-1.4s10.4 24.2 1.4 33.9c-22 23.8-60 49.4-113.6 49.4s-91.7-25.5-113.6-49.4c-9-9.7-8.4-24.9 1.4-33.9s24.9-8.4 33.9 1.4zM144.4 208a32 32 0 1 1 64 0 32 32 0 1 1 -64 0zm192-32a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"></path></svg></span> </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> Scalability </td>
-   <td style="text-align:left;"> <span style="     border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: rgba(255, 165, 0, 255) !important;"><svg aria-hidden="true" role="img" viewbox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M464 256A208 208 0 1 1 48 256a208 208 0 1 1 416 0zM256 0a256 256 0 1 0 0 512A256 256 0 1 0 256 0zM176.4 240a32 32 0 1 0 0-64 32 32 0 1 0 0 64zm192-32a32 32 0 1 0 -64 0 32 32 0 1 0 64 0zM184 328c-13.3 0-24 10.7-24 24s10.7 24 24 24H328c13.3 0 24-10.7 24-24s-10.7-24-24-24H184z"></path></svg></span> </td>
-   <td style="text-align:left;"> <span style="     border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: rgba(255, 165, 0, 255) !important;"><svg aria-hidden="true" role="img" viewbox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M464 256A208 208 0 1 1 48 256a208 208 0 1 1 416 0zM256 0a256 256 0 1 0 0 512A256 256 0 1 0 256 0zM176.4 240a32 32 0 1 0 0-64 32 32 0 1 0 0 64zm192-32a32 32 0 1 0 -64 0 32 32 0 1 0 64 0zM184 328c-13.3 0-24 10.7-24 24s10.7 24 24 24H328c13.3 0 24-10.7 24-24s-10.7-24-24-24H184z"></path></svg></span> </td>
-   <td style="text-align:left;"> <span style="     border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: rgba(0, 100, 0, 255) !important;"><svg aria-hidden="true" role="img" viewbox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M464 256A208 208 0 1 0 48 256a208 208 0 1 0 416 0zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zm177.6 62.1C192.8 334.5 218.8 352 256 352s63.2-17.5 78.4-33.9c9-9.7 24.2-10.4 33.9-1.4s10.4 24.2 1.4 33.9c-22 23.8-60 49.4-113.6 49.4s-91.7-25.5-113.6-49.4c-9-9.7-8.4-24.9 1.4-33.9s24.9-8.4 33.9 1.4zM144.4 208a32 32 0 1 1 64 0 32 32 0 1 1 -64 0zm192-32a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"></path></svg></span> </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> Cost </td>
-   <td style="text-align:left;"> <span style="     border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: rgba(255, 0, 0, 255) !important;"><svg aria-hidden="true" role="img" viewbox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M464 256A208 208 0 1 0 48 256a208 208 0 1 0 416 0zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zM174.6 384.1c-4.5 12.5-18.2 18.9-30.7 14.4s-18.9-18.2-14.4-30.7C146.9 319.4 198.9 288 256 288s109.1 31.4 126.6 79.9c4.5 12.5-2 26.2-14.4 30.7s-26.2-2-30.7-14.4C328.2 358.5 297.2 336 256 336s-72.2 22.5-81.4 48.1zM144.4 208a32 32 0 1 1 64 0 32 32 0 1 1 -64 0zm192-32a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"></path></svg></span> </td>
-   <td style="text-align:left;"> <span style="     border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: rgba(0, 100, 0, 255) !important;"><svg aria-hidden="true" role="img" viewbox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M464 256A208 208 0 1 0 48 256a208 208 0 1 0 416 0zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zm177.6 62.1C192.8 334.5 218.8 352 256 352s63.2-17.5 78.4-33.9c9-9.7 24.2-10.4 33.9-1.4s10.4 24.2 1.4 33.9c-22 23.8-60 49.4-113.6 49.4s-91.7-25.5-113.6-49.4c-9-9.7-8.4-24.9 1.4-33.9s24.9-8.4 33.9 1.4zM144.4 208a32 32 0 1 1 64 0 32 32 0 1 1 -64 0zm192-32a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"></path></svg></span> </td>
-   <td style="text-align:left;"> <span style="     border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: rgba(0, 100, 0, 255) !important;"><svg aria-hidden="true" role="img" viewbox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M464 256A208 208 0 1 0 48 256a208 208 0 1 0 416 0zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zm177.6 62.1C192.8 334.5 218.8 352 256 352s63.2-17.5 78.4-33.9c9-9.7 24.2-10.4 33.9-1.4s10.4 24.2 1.4 33.9c-22 23.8-60 49.4-113.6 49.4s-91.7-25.5-113.6-49.4c-9-9.7-8.4-24.9 1.4-33.9s24.9-8.4 33.9 1.4zM144.4 208a32 32 0 1 1 64 0 32 32 0 1 1 -64 0zm192-32a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"></path></svg></span> </td>
-  </tr>
-</tbody>
-</table>
-
-</div>
-</div>
-<aside class="notes">
-<p>R Shiny: - High flexibility and customization - ideal for advanced analytics - requires R programming skills. - Integration with R’s rich ecosystem of packages - Customizable user interfaces - Extensive resources and community support</p>
-<p>Tableau - point and click = easy (+) - point and click = no source code, not reproducible (-) - handles large data -c</p>
-<p>PowerBI - User-friendly for non-technical users - good scalability and performance - integrates well with other Microsoft products - limited customization - limited advanced analytics</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-</section>
-<section id="overview" class="slide level2">
-<h2>Overview</h2>
-<ul>
-<li>A brief overview of Posit Connect</li>
-<li>A review of the type of data products that can be deployed to Posit Connect</li>
-<li>How to use it</li>
-<li>Advanced features</li>
-</ul>
-<aside class="notes">
-
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-</section>
-<section id="what-is-quarto" class="slide level2">
-<h2>What is Quarto?</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
-<p><img data-src="images/quarto_logo.png" style="width:75.0%"></p>
-</div><div class="column" style="width:50%;">
-<ul>
-<li><strong>Open-source</strong> publishing system</li>
-<li>The new-and-improved R Markdown
-<ul>
-<li>Supports R, Python, Julia, Observable</li>
-</ul></li>
-<li>Produce articles, reports, presentations, and websites from code</li>
-<li>Output as HTML, PDF, Word</li>
-</ul>
-</div>
-</div>
-<aside class="notes">
-<ul>
-<li>Quarto is an open source scientific publishing system</li>
-<li>Next generation of R Markdown</li>
-<li>Supports multiple programming languages</li>
-<li>Can create articles, reports, presentations, websites</li>
-<li>Can output in HTML, PDF, Word and other formats</li>
-</ul>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-</section>
-<section id="what-is-r-shiny" class="slide level2">
-<h2>What is R Shiny?</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
-<p><img data-src="images/shiny_logo.png" style="width:85.0%"></p>
-</div><div class="column" style="width:50%;">
-<ul>
-<li>Shiny is an R package</li>
-<li>Enables building interactive web applications that execute R
-<ul>
-<li>Standalone websites</li>
-<li>Embed interactive charts in Quarto docs</li>
-<li>Build dashboards</li>
-</ul></li>
-</ul>
-</div>
-</div>
-<aside class="notes">
-<ul>
-<li>Shiny is an R package</li>
-<li>Enables building interactive web applications that execute R
-<ul>
-<li>Standalone websites</li>
-<li>Embed interactive charts in Quarto docs</li>
-<li>Build dashboards</li>
-</ul></li>
-</ul>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-</section></section>
-<section id="publishing-a-report" class="title-slide slide level1 center">
-<h1>Publishing a <img data-src="images/quarto_logo.png" class="center-inline" height="100"> Report</h1>
-
-</section>
-
-<section>
-<section id="section-3" class="title-slide slide level1 center">
-<h1></h1>
-<div class="columns smaller">
-<div class="column" style="width:50%;">
-<p>Quarto file <img data-src="images/report_code.png" height="625"></p>
-</div><div class="column" style="width:50%;">
-<div class="fragment">
-<p>Rendered Report</p>
-<iframe width="780" height="650" src="report_example/report_example.html" title="Example Report"></iframe>
-</div>
-</div>
-</div>
-<aside class="notes">
-
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-</section>
-<section id="publishing-report-to-posit-connect" class="slide level2">
-<h2>Publishing Report to Posit Connect</h2>
-<video id="video_shortcode_videojs_video1" class="video-js vjs-default-skin vjs-fluid" controls="" preload="auto" data-setup="{}" title=""><source src="images/publish_to_posit.mp4"></video>
-</section>
-<section id="scheduling-a-report" class="slide level2">
-<h2>Scheduling a Report</h2>
-<ul>
-<li>Update report with new data</li>
-<li>Email report on a schedule</li>
-<li>Small changes from previous process</li>
-</ul>
-
-<img data-src="images/publish_to_window2.png" class="r-stretch"><aside class="notes">
-
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-</section>
-<section id="publishing-a-application" class="slide level2">
-<h2>Publishing a <img data-src="images/shiny_logo.png" class="center-inline" height="100"> Application</h2>
-<p>Sharing a Shiny app</p>
-<p>Can revert to previous versions</p>
-<aside class="notes">
-
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-</section>
-<section id="git-backed-content" class="slide level2">
-<h2>Git-backed Content</h2>
-<p>[if there is time]</p>
-</section>
-<section id="getting-started" class="slide level2">
-<h2>Getting Started</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
-<p><img data-src="images/getting_started.png" style="width:85.0%"></p>
-</div><div class="column" style="width:50%;">
-<p><i class="fa-solid fa-comment-dollar" title="Comment dollar" aria-label="comment-dollar"></i> <strong>Annual Costs</strong></p>
-<div class="smaller">
-<p>License: $290<br>
-Environment: $144<br>
-Initial setup: ~$52<br>
-<strong>Total per app: $434 + $52 initial setup fee</strong></p>
-</div>
-<p><i class="fa-solid fa-address-card" title="Address card" aria-label="address-card"></i> <strong>Contact</strong></p>
-<div class="smaller">
-<p>Michaelle Schultz<br>
-Chief of Data Integration, Ecological Services<br>
-<i class="fa-solid fa-envelope" title="Email address logo" aria-label="envelope"></i> <a href="mailto:michaelle_schultz@fws.gov">michaelle_schultz@fws.gov</a></p>
-</div>
-<p><i class="fa-brands fa-github" title="The GitHub octocat logo" aria-label="github"></i> <strong>Additional Resources</strong></p>
-<div class="small">
-<p><a href="https://github.com/USFWS/posit-connect-presentation" class="uri">https://github.com/USFWS/posit-connect-presentation</a></p>
-</div>
-</div>
-</div>
-<aside class="notes">
-
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -711,8 +367,364 @@ Chief of Data Integration, Ecological Services<br>
 <div class="footer footer-default">
 <p><a href="https://doimspp.sharepoint.com/sites/fws-FF07S00000-data/SitePages/Alaska-Data-Week-2024.aspx" class="author small">Alaska Data Week 2024</a></p>
 </div>
+</div></section>
+<section id="section" class="slide level2" data-background-image="images/desk_with_ideas.png" data-background-size="contain">
+<h2></h2>
+<div class="fragment">
+<p><img data-src="images/r_logo.png" class="absolute" style="top: 150px; left: 140px; width: 25%; "></p>
+<p><img data-src="images/python_logo.png" class="absolute" style="top: 150px; right: 150px; width: 20%; "></p>
 </div>
+<div class="fragment">
+<p><img data-src="images/shiny_logo.png" class="absolute" style="top: 250px; right: 0px; width: 20%; "> <img data-src="images/quarto_logo.png" class="absolute" style="top: 250px; left: 0px; width: 17%; "></p>
+</div>
+<aside class="notes">
+<ul>
+<li>Those of you that have moved to a script-based data workflow can speak to the advantages of this approach over a traditional manual data workflow.</li>
+<li>Advantages include reproducibility, transparent and documented steps, and virtually unlimited tools for analyzing and visualizing data.</li>
+<li>[click]</li>
+<li>One of the great features of programming languages like R and Python is the ability to generate products from data.</li>
+<li>These products include basic tables and plots, but more recently, they also include the ability to render dynamic reports that update with new data or interactive applications where a user can select different options to visualize and summarize data.</li>
+<li>[click]</li>
+<li>If you using code for your work, you might have heard about or created reports rendered in RMarkdown or Quarto or created applications using R Shiny.</li>
+<li>The possibilities for communicating data using code can seem endless if you have the time and know-how.</li>
+</ul>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="section-1" class="slide level2" data-background-image="images/cannot_share.png" data-background-size="contain">
+<h2></h2>
 </section></section>
+<section>
+<section id="section-2" class="title-slide slide level1 center" data-background-image="images/cannot_share2.png" data-background-size="contain">
+<h1></h1>
+<p>:::</p>
+<aside class="notes">
+<ul>
+<li>But <strong>sharing</strong> these reports and applications can be a limitation.</li>
+<li>For example, say you have a report that you wrote in Quarto. How do you share that will the decision-maker?</li>
+<li>Most likely, the answer might be that you render the report as a PDF or Word document, save it on your computer (or better yet ServCat!), and then email it as an attachment or a hyperlink to the ServCat reference.</li>
+<li>What about applications? You’ve developed a cool Shiny app to display your survey results, but how do you share that with managers that aren’t R users? [click]</li>
+<li>Until fairly recently, FWS biologists did not have any viable options for publishing R Shiny applications.</li>
+<li>This was quite frustrating, given the time and energy put into generating these cool data products.</li>
+</ul>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="section-3" class="slide level2" data-transition="zoom-in none-out">
+<h2><img data-src="./images/posit_connect.png" style="width:90.0%"></h2>
+<aside class="notes">
+<ul>
+<li>Enter Posit Connect!</li>
+<li>Posit Connect is a publishing platform that supports R and Python frameworks, including Shiny, Quarto, RMarkdown, and Jupyter Notebooks.</li>
+<li>It allows you to:
+<ul>
+<li>Publish applications (Shiny) and documents (Quarto/R Markdown)</li>
+<li>Automate and schedule tasks with code</li>
+<li>Host resources like data, models, and R objects</li>
+<li>Even develop and share web APIs</li>
+</ul></li>
+</ul>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="what-is-quarto" class="slide level2">
+<h2>What is Quarto <img data-src="images/quarto_logo.png" class="center-inline" height="90"> ?</h2>
+<p><img data-src="images/quarto_illustration.png" style="width:100.0%"></p>
+<div class="{smaller}">
+<p>Illustration by Allison Horst</p>
+</div>
+<aside class="notes">
+<ul>
+<li>Before diving another further, I realize that there are many folks listening that may not be familiar with some of the systems that I’ve mentioned.</li>
+<li>So, here’s a quick overview.</li>
+<li>Quarto is an open source scientific publishing system</li>
+<li>Next generation of R Markdown</li>
+<li>Supports multiple programming languages (R, Python, Julia, Observable)</li>
+<li>Can create articles, reports, presentations, websites</li>
+<li>Mix text with in-line code to update statistics in the text</li>
+<li>Can output in HTML, PDF, Word and other formats</li>
+</ul>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="what-is-r-shiny" class="slide level2">
+<h2>What is R Shiny <img data-src="images/shiny_logo.png" class="center-inline" height="80"> ?</h2>
+<p><img data-src="images/shiny_app_example.png" style="width:100.0%"></p>
+<aside class="notes">
+<ul>
+<li>Shiny is an R package</li>
+<li>Enables building interactive web applications that execute R
+<ul>
+<li>Standalone websites</li>
+<li>Embed interactive charts in Quarto docs</li>
+<li>Build dashboards</li>
+</ul></li>
+<li>Primary advantage of a Shiny app is that decision makers can interact with the data.</li>
+<li>The Shiny app example show here uses data from Alaska refuge survey annual reporting to explore refuge survey progress along a data life cycle from data acquisition to preservation, and some of the reasons for why annual survey tasks could not be completed.</li>
+<li>For example, in 2023, a lack of refuge staff was the primary reason that surveys that did not acquire data, followed by partner resources.</li>
+</ul>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section></section>
+<section id="publishing-a-report" class="title-slide slide level1 center">
+<h1>Publishing a <img data-src="images/quarto_logo.png" class="center-inline" height="100"> Report</h1>
+<aside class="notes">
+<p>Ok. I’ll now walk through the steps to publishing a Quarto report.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+
+<section>
+<section id="section-4" class="title-slide slide level1 center">
+<h1></h1>
+<div class="columns smaller">
+<div class="column" style="width:50%;">
+<p>Quarto file <img data-src="images/report_code.png" height="625"></p>
+</div><div class="column" style="width:50%;">
+<div class="fragment">
+<p>Rendered Report</p>
+<iframe width="780" height="620" src="report_example/report_example.html" title="Example Report">
+</iframe>
+</div>
+</div></div>
+<aside class="notes">
+<ul>
+<li>On the left side, we have a Quarto markdown file to render a simulated moose aerial survey. The code imports observation data, creates figures and tables, calculates statistics that are included in the text.<br>
+</li>
+<li>Typical of these files, there is what’s called a YAML header at the top that provides from metadata and the file format to output (in this case, it is HTML).</li>
+<li>[click]</li>
+<li>When rendered in Rstudio, this code produces a HTML report. It includes an embedded and interactive leaflet map widget and interactive tables of the data. In line summary statistics are calculated based on the input data.</li>
+</ul>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="section-5" class="slide level2">
+<h2></h2>
+<div class="center">
+<video id="video_shortcode_videojs_video1" height="650" class="video-js vjs-default-skin " controls="" preload="auto" data-setup="{}" title=""><source src="images/publish_to_posit.mp4"></video>
+</div>
+<aside class="notes">
+<ul>
+<li>Ok, here is the same Quarto file on the left and the rendered report on the right, as viewed in RStudio. I’ll walk through the steps to get this local report published as a website in Posit Connect.</li>
+</ul>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="scheduling-a-report" class="slide level2">
+<h2>Scheduling a Report</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><img data-src="images/publish_to_window2.png" style="width:100.0%"></p>
+</div><div class="column" style="width:50%;">
+<ul>
+<li>Update report in reponse to new data:
+<ol type="1">
+<li>Include code to import data in the qmd</li>
+<li>Create a second qmd to import data, save as a pin</li>
+</ol></li>
+<li>Option to email report on a schedule</li>
+</ul>
+</div></div>
+<aside class="notes">
+<ul>
+<li>What if you have a report that you regularly update or one that needs to be shared with decision-makers on a schedule?</li>
+<li>In this sitation, you’re looking at scheduling a report, which is quite straightforward in Posit Connect.</li>
+<li>The first steps are the same as what you just saw.</li>
+<li>When you get to the window asking whether to publish the doc only or publish it with the source code, you select the later option.</li>
+<li>Note that to have the report update with new data, you need to provide the Quarto doc with access to updated data. This can be done either within the same Quarto file, by importing data that are updated (for example from AGOL) or you can create a seperate Quarto file that would be scheduled to import data and save it in Posit Connect as what’s called a Pin. You would then point to this Pin in your original Quarto report.</li>
+<li>Either way, you have options for how often to update the data or report. You can also tell it to schedule an email with the updated report, so that decision makers know that new information is available.</li>
+</ul>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="publishing-a-application" class="slide level2">
+<h2>Publishing a <img data-src="images/shiny_logo.png" class="center-inline" height="100"> Application</h2>
+<p><br><br><br></p>
+<div class="center">
+<div class="large">
+<p>Almost the same process<br>
+as publishing a report!</p>
+</div>
+</div>
+<aside class="notes">
+<p>The steps are basically the same as publishing a Quarto report.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="publishing-git-backed-content" class="slide level2">
+<h2>Publishing Git-backed <i class="fa-brands fa-github" title="The GitHub octocat logo" aria-label="github"></i> Content</h2>
+<div class="columns">
+<div class="column" style="width:40%;">
+<p><img data-src="images/octocat.png" style="width:90.0%"></p>
+</div><div class="column" style="width:60%;">
+<div class="small">
+<ol type="1">
+<li>Create a Version Control RStudio Project connected to a GitHub <i class="fa-brands fa-github" title="The GitHub octocat logo" aria-label="github"></i> repository.</li>
+<li>Create a <code>manifest.json</code> file by running <code>rsconnect::writeManifest()</code>.</li>
+<li>Visit <a href="https://das.ecosphere.fws.gov/connect/">Posit Connect</a>. Select <img data-src="images/publish_button_posit_connect.png" class="center-inline" height="30">.</li>
+<li>Select <img data-src="images/import_from_git.png" class="center-inline" height="60">.</li>
+<li>Provide URL to <strong>public</strong> GitHub repository. Select a branch.</li>
+<li>🤩</li>
+</ol>
+</div>
+</div></div>
+<aside class="notes">
+<ul>
+<li>For those of you that are using Git and GitHub to version control and collaborate on developing data prodcuts, know that it’s possible to publish content on Posit Connect that updates with changes on a GitHub repository.</li>
+<li>Why would you want this workflow?
+<ul>
+<li>Automatically updates application when changes are pushed to GitHub</li>
+<li>Can dedicate GitHub branches for your app in either a <code>development</code> and <code>production</code> environment</li>
+</ul></li>
+<li>First, you need to create project that is under version control and connected to a GitHub repository.</li>
+<li>Then you need to create what’s called a manifest json file that describes the R package dependencies and environment. To do this, simply run the function shown.</li>
+<li>Next, you need to open your Posit Connect content dashboard and select “Publish”.</li>
+<li>Select the Import from Git option.</li>
+<li>Provide a URL to a <strong>public</strong> GitHub repository and specify a branch.</li>
+<li>That’s it.</li>
+<li>Whenever you make changes to that branch, Posit Connect detects that change and republishes your data product.</li>
+</ul>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="getting-started" class="slide level2">
+<h2>Getting Started</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><img data-src="images/getting_started.png" style="width:85.0%"></p>
+</div><div class="column" style="width:50%;">
+<p><br> <i class="fa-solid fa-comment-dollar" title="Comment dollar" aria-label="comment-dollar"></i> <strong>Annual Costs</strong></p>
+<div class="smaller">
+<p>License: $290<br>
+Environment: $144<br>
+<strong>Total per app: $434 + $52 initial setup fee</strong></p>
+</div>
+<p><i class="fa-solid fa-address-card" title="Address card" aria-label="address-card"></i> <strong>Contact</strong></p>
+<div class="smaller">
+<p>Michaelle Schultz<br>
+Chief of Data Integration<br>
+FWS Ecological Services<br>
+<i class="fa-solid fa-envelope" title="Email address logo" aria-label="envelope"></i> <a href="mailto:michaelle_schultz@fws.gov">michaelle_schultz@fws.gov</a></p>
+</div>
+<p><i class="fa-brands fa-github" title="The GitHub octocat logo" aria-label="github"></i> <strong>Additional Resources</strong></p>
+<div class="smaller">
+<p><a href="https://github.com/USFWS/posit-connect-presentation" class="uri">https://github.com/USFWS/posit-connect-presentation</a></p>
+</div>
+</div></div>
+<aside class="notes">
+
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+</section>
     </div>
   </div>
 
@@ -1031,18 +1043,7 @@ Chief of Data Integration, Ecological Services<br>
         }
         return false;
       }
-      const clipboard = new window.ClipboardJS('.code-copy-button', {
-        text: function(trigger) {
-          const codeEl = trigger.previousElementSibling.cloneNode(true);
-          for (const childEl of codeEl.children) {
-            if (isCodeAnnotation(childEl)) {
-              childEl.remove();
-            }
-          }
-          return codeEl.innerText;
-        }
-      });
-      clipboard.on('success', function(e) {
+      const onCopySuccess = function(e) {
         // button target
         const button = e.trigger;
         // don't keep focus
@@ -1074,7 +1075,29 @@ Chief of Data Integration, Ecological Services<br>
         }, 1000);
         // clear code selection
         e.clearSelection();
+      }
+      const getTextToCopy = function(trigger) {
+          const codeEl = trigger.previousElementSibling.cloneNode(true);
+          for (const childEl of codeEl.children) {
+            if (isCodeAnnotation(childEl)) {
+              childEl.remove();
+            }
+          }
+          return codeEl.innerText;
+      }
+      const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+        text: getTextToCopy
       });
+      clipboard.on('success', onCopySuccess);
+      if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+        // For code content inside modals, clipBoardJS needs to be initialized with a container option
+        // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+        const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+          text: getTextToCopy,
+          container: window.document.getElementById('quarto-embedded-source-code-modal')
+        });
+        clipboardModal.on('success', onCopySuccess);
+      }
         var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
         var mailtoRegex = new RegExp(/^mailto:/);
           var filterRegex = new RegExp('/' + window.location.host + '/');
@@ -1082,7 +1105,7 @@ Chief of Data Integration, Ecological Services<br>
             return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
         }
         // Inspect non-navigation links and adorn them if external
-     	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+     	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
         for (var i=0; i<links.length; i++) {
           const link = links[i];
           if (!isInternal(link.href)) {
