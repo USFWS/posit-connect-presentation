@@ -2,7 +2,7 @@
   {
     "name": "posit-connect-presentation",
     "organization": "U.S. Fish & Wildlife Service",
-    "description": "A presentation during the Alaska Data Week that introduces FWS staff to Posit Connect",
+    "description": "An Introduction to Publishing Data Products Using Posit Connect",
     "version": "0.1.0",
     "status": "Development",
 
@@ -42,7 +42,7 @@
     },
 
     "date": {
-      "metadataLastUpdated": "2024-09-20"
+      "metadataLastUpdated": "2024-10-29"
     }
   }
 ]
