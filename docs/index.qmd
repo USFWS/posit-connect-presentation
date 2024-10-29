@@ -285,6 +285,9 @@ FWS Ecological Services
 
 ::: {.smaller}
 <https://github.com/USFWS/posit-connect-presentation>
+
+ServCat Reference: [https://ecos.fws.gov/ServCat/Reference/Profile/172724 
+](https://ecos.fws.gov/ServCat/Reference/Profile/172724) 
 :::
 ::::::
 ::::::::
