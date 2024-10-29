@@ -77,16 +77,18 @@ Refuge Inventory and Monitoring\
 
 ##  {background-image="images/cannot_share.png" background-size="contain"}
 
-#  {background-image="images/cannot_share2.png" background-size="contain"}
-
-:::
-
 ::: notes
 -   But **sharing** these reports and applications can be a limitation.
 -   For example, say you have a report that you wrote in Quarto. How do you share that will the decision-maker?
 -   Most likely, the answer might be that you render the report as a PDF or Word document, save it on your computer (or better yet ServCat!), and then email it as an attachment or a hyperlink to the ServCat reference.
 -   What about applications? You've developed a cool Shiny app to display your survey results, but how do you share that with managers that aren't R users? \[click\]
 -   Until fairly recently, FWS biologists did not have any viable options for publishing R Shiny applications.
+:::
+
+
+#  {background-image="images/cannot_share2.png" background-size="contain"}
+
+::: notes
 -   This was quite frustrating, given the time and energy put into generating these cool data products.
 :::
 
