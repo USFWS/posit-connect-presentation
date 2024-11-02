@@ -7,7 +7,8 @@ stable](https://img.shields.io/badge/lifecycle-stable-green.svg)](https://lifecy
 
 <!-- badges: end -->
 
-# An Introduction to Publishing Data Products Using Posit Connect
+An Introduction to Publishing Data Products Using Posit Connect
+================================================================
 
 [Link to presentation
 slides](https://usfws.github.io/posit-connect-presentation/#/an-introduction-to-publishing-data-products-using-posit-connect)
@@ -30,9 +31,10 @@ After attending this lightning talk, participants will:
 USFWS Refuge Inventory and Monitoring (I&M) Program  
 Alaska Region
 
-## When
-
-Tuesday, October 29, 2024
+:spiral_calendar: October 29, 2024 
+:alarm_clock:     1:15 pm - 1:30 pm  
+:hotel:           Virtual  
+:writing_hand:    [Alaska Data Week](https://doimspp.sharepoint.com/sites/fws-FF07S00000-data/SitePages/Alaska-Data-Week-2024.aspx?xsdata=MDV8MDJ8fGY0NjAxZjJmMDlkNzQ2MTA1OTYxMDhkY2Y5Y2QxZTMzfDA2OTNiNWJhNGIxODRkN2I5MzQxZjMyZjQwMGE1NDk0fDB8MHw2Mzg2NTk5MDY1NTAwNjE0MDl8VW5rbm93bnxWR1ZoYlhOVFpXTjFjbWwwZVZObGNuWnBZMlY4ZXlKV0lqb2lNQzR3TGpBd01EQWlMQ0pRSWpvaVYybHVNeklpTENKQlRpSTZJazkwYUdWeUlpd2lWMVFpT2pFeGZRPT18MXxMMk5vWVhSekx6RTVPbTFsWlhScGJtZGZUa1JOZWsxWFJYZE5SR04wVDFSR2JFOVRNREJQUjBwb1RGZEdhRTV0VVhST1YxSm9Xa1JSTUU1VVNUTmFSR042UUhSb2NtVmhaQzUyTWk5dFpYTnpZV2RsY3k4eE56TXdNemt6T0RVek5qVXl8YTZlMDgxYzgxZDM0NDhiMzU5NjEwOGRjZjljZDFlMzN8NDg2MWQyOTJmNjk3NGNjNDg5YWIwNDhjYTcyZWYzODc%3D&sdata=RWZKWU5HdmFvWVg5d1RndXFYTnVDeHd3UU9VV3NOVnA4QmlDa0VOaEhZOD0%3D&ovuser=0693b5ba-4b18-4d7b-9341-f32f400a5494%2Cmccrea_cobb%40fws.gov&OR=Teams-HL&CT=1730499998831&clickparams=eyJBcHBOYW1lIjoiVGVhbXMtRGVza3RvcCIsIkFwcFZlcnNpb24iOiI0OS8yNDEwMDMyNDkxNiIsIkhhc0ZlZGVyYXRlZFVzZXIiOmZhbHNlfQ%3D%3D)
 
 ## Resources
 
@@ -59,10 +61,9 @@ Tuesday, October 29, 2024
 - [Getting Started with
   Pins](https://pins.rstudio.com/articles/pins.html)
 - [Leveraging Pins with Posit Connect
-  (video)](https://www.youtube.com/watch?v=q7yCapEdzhk) [How to keep
-  data up-to-date with 6 pins workflows (aka avoid data-final.csv &
-  data-final-final.csv)
-  (video)](https://www.youtube.com/watch?v=t8A-ysXinpE)
+  (video)](https://www.youtube.com/watch?v=q7yCapEdzhk) 
+- [How to keep data up-to-date with 6 pins workflows (aka avoid data-final.csv &
+  data-final-final.csv)(video)](https://www.youtube.com/watch?v=t8A-ysXinpE)
 
 ### R Shiny
 
