@@ -31,7 +31,7 @@ p <- c("fontawesome",
 lapply(p, require, character.only = TRUE)
 ```
 
-# An Introduction to Publishing Data Products Using ![](images/posit_connect_logo.png){.center-inline height="90px"} {.small}
+# An Introduction to Publishing Data Products Using ![](images/posit_connect_logo.png){fig-alt="Posit Connect logo" .center-inline height="90px"} {.small}
 
 <br><br>
 
@@ -55,13 +55,13 @@ Refuge Inventory and Monitoring\
 ##  {background-image="images/desk_with_ideas.png" background-size="contain"}
 
 ::: fragment
-![](images/r_logo.png){.absolute top="150" left="140" width="25%"}
+![](images/r_logo.png){fig-alt="The R logo." .absolute top="150" left="140" width="25%"}
 
-![](images/python_logo.png){.absolute top="150" right="150" width="20%"}
+![](images/python_logo.png){fig-alt="The Python logo" .absolute top="150" right="150" width="20%"}
 :::
 
 ::: fragment
-![](images/shiny_logo.png){.absolute top="250" right="0" width="20%"} ![](images/quarto_logo.png){.absolute top="250" left="0" width="17%"}
+![](images/shiny_logo.png){fig-alt="R Shiny logo." .absolute top="250" right="0" width="20%"} ![](images/quarto_logo.png){fig-alt="Quarto logo." .absolute top="250" left="0" width="17%"}
 :::
 
 ::: notes
@@ -92,7 +92,7 @@ Refuge Inventory and Monitoring\
 -   This was quite frustrating, given the time and energy put into generating these cool data products.
 :::
 
-## ![](./images/posit_connect.png){width="90%"} {transition="zoom-in none-out"}
+## ![](./images/posit_connect.png){fig-alt="Posit Connect logo." width="90%"} {transition="zoom-in none-out"}
 
 ::: notes
 -   Enter Posit Connect!
@@ -104,9 +104,9 @@ Refuge Inventory and Monitoring\
     -   Even develop and share web APIs
 :::
 
-## What is Quarto ![](images/quarto_logo.png){.center-inline height="90px"} ?
+## What is Quarto ![](images/quarto_logo.png){fig-alt="Quarto logo." .center-inline height="90px"} ?
 
-![](images/quarto_illustration.png){width="100%"}
+![](images/quarto_illustration.png){fig-alt="An illustration of the 3 steps to rendering a document in Quarto. The first step shows the logos of different programming languages, including R and Python. The second step shows the Quarto logo. The third step shows the logos of HTML, PDF and Word documents." width="100%"}
 
 ::: {smaller}
 Illustration by Allison Horst
@@ -123,9 +123,9 @@ Illustration by Allison Horst
 -   Can output in HTML, PDF, Word and other formats
 :::
 
-## What is R Shiny ![](images/shiny_logo.png){.center-inline height="80px"} ?
+## What is R Shiny ![](images/shiny_logo.png){fig-alt="R Shiny logo." .center-inline height="80px"} ?
 
-![](images/shiny_app_example.png){width="100%"}
+![](images/shiny_app_example.png){fig-alt="A screenshot of an example of an R Shiny app. The app shows data on Alaska refuge annual accomplishments." width="100%"}
 
 ::: notes
 -   Shiny is an R package
@@ -138,7 +138,7 @@ Illustration by Allison Horst
 - For example, in 2023, a lack of refuge staff was the primary reason that surveys that did not acquire data, followed by partner resources.
 :::
 
-# Publishing a ![](images/quarto_logo.png){.center-inline height="100px"} Report
+# Publishing a ![](images/quarto_logo.png){fig-alt="Quarto logo." .center-inline height="100px"} Report
 
 ::: notes
 Ok. I'll now walk through the steps to publishing a Quarto report.
@@ -149,7 +149,7 @@ Ok. I'll now walk through the steps to publishing a Quarto report.
 
 ::: {.columns .smaller}
 ::: {.column width="50%"}
-Quarto file ![](images/report_code.png){height="625"}
+Quarto file ![](images/report_code.png){fig-alt="A screenshot of an example of a Quarto file in RStudio that can render a made-up moose aerial survey report as an HTML document." height="625"}
 :::
 
 ::: {.column width="50%"}
@@ -186,7 +186,7 @@ Rendered Report
 
 ::::: columns
 ::: {.column width="50%"}
-![](images/publish_to_window2.png){width="100%"}
+![](images/publish_to_window2.png){fig-alt="A screenshot of a window that displays when publishing from RStudio to Posit Connect. The user choses between publish document with source code or publish finished document only. The first option is circled." width="100%"}
 :::
 
 ::: {.column width="50%"}
@@ -206,7 +206,7 @@ Rendered Report
 - Either way, you have options for how often to update the data or report. You can also tell it to schedule an email with the updated report, so that decision makers know that new information is available. 
 :::
 
-## Publishing a ![](images/shiny_logo.png){.center-inline height="100px"} Application
+## Publishing a ![](images/shiny_logo.png){fig-alt="R Shiny logo." .center-inline height="100px"} Application
 
 <br><br><br>
 
@@ -225,15 +225,15 @@ The steps are basically the same as publishing a Quarto report.
 
 :::::: columns
 ::: {.column width="40%"}
-![](images/octocat.png){width="90%"}
+![](images/octocat.png){fig-alt="An AI generated image of a claymation version of the GitHub octocat working at a computer." width="90%"}
 :::
 
 :::: {.column width="60%"}
 ::: small
 1.  Create a Version Control RStudio Project connected to a GitHub {{< fa brands github title="The GitHub octocat logo" >}} repository.
 2.  Create a `manifest.json` file by running `rsconnect::writeManifest()`.
-3.  Visit [Posit Connect](https://das.ecosphere.fws.gov/connect/). Select ![](images/publish_button_posit_connect.png){.center-inline height="30px"}.
-4.  Select ![](images/import_from_git.png){.center-inline height="60px"}.
+3.  Visit [Posit Connect](https://das.ecosphere.fws.gov/connect/). Select ![](images/publish_button_posit_connect.png){fig-alt="Publish button" .center-inline height="30px"}.
+4.  Select ![](images/import_from_git.png){fig-alt="Import from Git button" .center-inline height="60px"}.
 5.  Provide URL to **public** GitHub repository. Select a branch.
 6.  🤩
 :::
@@ -259,7 +259,7 @@ The steps are basically the same as publishing a Quarto report.
 
 :::::::: columns
 ::: {.column width="50%"}
-![](images/getting_started.png){width="85%"}
+![](images/getting_started.png){fig-alt="An AI generated image of a claymation style woman at a computer. She is happy. There is confetti and a swirl of plots and code in the air over her head." width="85%"}
 :::
 
 :::::: {.column width="50%"}
@@ -267,9 +267,8 @@ The steps are basically the same as publishing a Quarto report.
 {{< fa comment-dollar title="Comment dollar" >}} **Annual Costs**
 
 ::: {.smaller}
-License: \$290\
-Environment: \$144\
-**Total per app: \$434 + \$52 initial setup fee**
+Developer license: \$290\
+Environment (each app): \$144\
 :::
 
 {{< fa address-card title="Address card" >}} **Contact**
@@ -293,50 +292,4 @@ ServCat Reference: [https://ecos.fws.gov/ServCat/Reference/Profile/172724
 ::::::::
 
 ::: notes
-:::
-
-## Compare Available Applications {visibility="hidden"}
-
-<br>
-
-```{r}
-sad <- fa("far fa-face-frown")
-meh <- fa("far fa-face-meh")
-smile <- fa("far fa-face-smile")
-
-Features <- c("Flexibility", "Analytics", "Visualizations", "Usability", 
-              "Scalability", "Cost")
-
-Shiny <- c(smile, smile, smile, sad,
-           meh, sad)
-Tableau <- c(meh, meh, meh, smile,
-             meh, smile)
-PowerBI <- c(sad, sad, meh, smile,
-             smile, smile)
-
-df <- data.frame(Features, Shiny, Tableau, PowerBI) %>%
-  mutate(Tableau = cell_spec(Tableau, format = "html",
-                        background = factor(Tableau, c(sad, meh, smile), c("#FF0000", "#FFA500", "#006400")), escape = FALSE),
-         Shiny = cell_spec(Shiny, format = "html",
-                        background = factor(Shiny, c(sad, meh, smile), c("#FF0000", "#FFA500", "#006400")), escape = FALSE),
-         PowerBI = cell_spec(PowerBI, format = "html",
-                        background = factor(PowerBI, c(sad, meh, smile), c("#FF0000", "#FFA500", "#006400")), escape = FALSE))
-
-
-kable(df,
-  table.attr = "quarto-disable-processing=true", 
-  format = "html", ## need to include for rendering
-  escape = FALSE) %>%
-  kable_styling(bootstrap_options = c("hover", "condensed", "responsive"),
-                position = "center",
-                full_width = TRUE)
-
-```
-
-::: notes
-R Shiny: - High flexibility and customization - ideal for advanced analytics - requires R programming skills. - Integration with R’s rich ecosystem of packages - Customizable user interfaces - Extensive resources and community support
-
-Tableau - point and click = easy (+) - point and click = no source code, not reproducible (-) - handles large data -c
-
-PowerBI - User-friendly for non-technical users - good scalability and performance - integrates well with other Microsoft products - limited customization - limited advanced analytics
 :::
